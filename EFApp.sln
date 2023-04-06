@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "使用json配置db参数", "使用json配置db参数\使用json配置db参数.csproj", "{B95F5285-45F5-4E70-9555-2D775C7118F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{183A3437-9D5F-49C8-9E25-6391EAF31051}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B95F5285-45F5-4E70-9555-2D775C7118F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B95F5285-45F5-4E70-9555-2D775C7118F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B95F5285-45F5-4E70-9555-2D775C7118F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B95F5285-45F5-4E70-9555-2D775C7118F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
