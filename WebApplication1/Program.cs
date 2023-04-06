@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Http.HttpResults;
-using Microsoft.Data.SqlClient;
+using Dapper;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DatabaseContext>(o =>
@@ -14,22 +14,74 @@ app.MapGet("/", () => "Hello World!");
 
 app.MapPut("update-salary", async (int companyId, DatabaseContext dbContext) =>
 {
-    var company =await dbContext
-        .Companies
-        .Include(c => c.Employees)
-        .FirstOrDefaultAsync(x => x.Id == companyId)!;
-    if (company is null)
-    {
-        return Results.NotFound("company is null");
-    }
+    #region 1.遍历更新 会产生1000个update语句
 
-    foreach (var employee in company.Employees)
-    {
-        employee.Salary = 1.1m * employee.Salary;
-    }
+    // var company =await dbContext
+    //     .Companies
+    //     .Include(c => c.Employees)
+    //     .FirstOrDefaultAsync(x => x.Id == companyId)!;
+    // if (company is null)
+    // {
+    //     return Results.NotFound("company is null");
+    // }
+    //
+    // foreach (var employee in company.Employees)
+    // {
+    //     employee.Salary = 1.1m * employee.Salary;
+    // }
+    //
+    // company.LastSalaryUpdateUtc = DateTime.UtcNow;
+    // await dbContext.SaveChangesAsync();
 
-    company.LastSalaryUpdateUtc = DateTime.UtcNow;
-    await dbContext.SaveChangesAsync();
+    #endregion
+
+    #region 2.使用ef执行原生sql,开启事务保证完整性
+
+    // var company = await dbContext
+    //     .Companies
+    //     .Include(c => c.Employees)
+    //     .FirstOrDefaultAsync(x => x.Id == companyId)!;
+    // if (company is null) return Results.NotFound("company is null");
+    //
+    // await dbContext.Database.BeginTransactionAsync();
+    // await dbContext.Database.ExecuteSqlInterpolatedAsync(
+    //     $"update Employees set Salary=Salary*1.1 where CompanyId={company.Id}");
+    //
+    // company.LastSalaryUpdateUtc = DateTime.UtcNow;
+    // // await dbContext.SaveChangesAsync();
+    // await dbContext.Database.CommitTransactionAsync();
+
+    #endregion
+
+    #region 3.使用Dapper
+
+    // var company = await dbContext
+    //     .Companies
+    //     .Include(c => c.Employees)
+    //     .FirstOrDefaultAsync(x => x.Id == companyId)!;
+    // if (company is null) return Results.NotFound("company is null");
+    //
+    //
+    // var transaction = await dbContext.Database.BeginTransactionAsync();
+    // await dbContext.Database.GetDbConnection().ExecuteAsync(
+    //     "update Employees set Salary=Salary*1.1 where CompanyId=@CompanyId",
+    //     new { CompanyId = company.Id },
+    //     transaction.GetDbTransaction()
+    // );
+    //
+    // company.LastSalaryUpdateUtc = DateTime.UtcNow;
+    // await dbContext.SaveChangesAsync();
+    // await dbContext.Database.CommitTransactionAsync();
+
+    #endregion
+
+
+    #region 4.使用ef core 新增的批量操作
+
+    
+
+    #endregion
+
     return Results.NoContent();
 });
 app.Run();
@@ -55,7 +107,7 @@ public class DatabaseContext : DbContext
             builder.HasData(new Company
             {
                 Id = 1,
-                Name = "Awesome Company",
+                Name = "Awesome Company"
             });
         });
 

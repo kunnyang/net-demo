@@ -1,15 +1,15 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\ef批量操作.csproj": {}
   },
   "projects": {
-    "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\ef批量操作.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\WebApplication1.csproj",
-        "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\ef批量操作.csproj",
+        "projectName": "ef批量操作",
+        "projectPath": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\ef批量操作.csproj",
         "packagesPath": "C:\\Users\\K\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",

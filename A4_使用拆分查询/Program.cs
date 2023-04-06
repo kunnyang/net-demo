@@ -9,9 +9,14 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddDbContext<AppDbContext>(o =>
+builder.Services.AddDbContext<AppDbContext>(dbContextOptionsBuilder =>
 {
-    o.UseSqlServer(builder.Configuration.GetConnectionString("Database"));
+    dbContextOptionsBuilder.UseSqlServer(builder.Configuration.GetConnectionString("Database"),
+        sqlServerDbContextOptionsBuilder =>
+        {
+            // 全局配置拆分查询
+            sqlServerDbContextOptionsBuilder.UseQuerySplittingBehavior(QuerySplittingBehavior.SplitQuery);
+        });
 });
 var app = builder.Build();
 

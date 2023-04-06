@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "//oc5jrKM/Yb6uyPeDMHrXWl2g+heO+M3ux0EBlIW1bG1HX/NRKsBS1kn05UwNKXsh+xitPbXNTgqen6onu6Xg==",
+  "dgSpecHash": "Jl9pmm8iNLQ0dXRWXsFXiIenQLUJnYLX3zJuPVwi8773oeOEqqTFceDM/c10PFE+hGuyN+x1oRNAja3k3oBdqA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\WebApplication1.csproj",
+  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\A2_ef批量操作.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\K\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\K\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\K\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\K\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\K\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
