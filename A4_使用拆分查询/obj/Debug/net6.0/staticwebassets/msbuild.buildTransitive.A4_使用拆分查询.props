@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\A4_使用拆分查询.props" />
+</Project>

@@ -1,8 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "使用json配置db参数", "使用json配置db参数\使用json配置db参数.csproj", "{B95F5285-45F5-4E70-9555-2D775C7118F1}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33516.290
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A1_使用json配置db参数", "使用json配置db参数\A1_使用json配置db参数.csproj", "{B95F5285-45F5-4E70-9555-2D775C7118F1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{183A3437-9D5F-49C8-9E25-6391EAF31051}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A2_ef批量操作", "WebApplication1\A2_ef批量操作.csproj", "{183A3437-9D5F-49C8-9E25-6391EAF31051}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A3_ef整洁架构_仓储模式", "A3_ef整洁架构\A3_ef整洁架构_仓储模式.csproj", "{E72BFC9E-8F3F-4E17-A76B-F6EA7AADC4A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A4_使用拆分查询", "A4_使用拆分查询\A4_使用拆分查询.csproj", "{41220B04-A656-4520-B226-C7B9EDB3A93A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +25,19 @@ Global
 		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{183A3437-9D5F-49C8-9E25-6391EAF31051}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E72BFC9E-8F3F-4E17-A76B-F6EA7AADC4A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E72BFC9E-8F3F-4E17-A76B-F6EA7AADC4A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E72BFC9E-8F3F-4E17-A76B-F6EA7AADC4A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E72BFC9E-8F3F-4E17-A76B-F6EA7AADC4A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41220B04-A656-4520-B226-C7B9EDB3A93A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41220B04-A656-4520-B226-C7B9EDB3A93A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41220B04-A656-4520-B226-C7B9EDB3A93A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41220B04-A656-4520-B226-C7B9EDB3A93A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43E3B330-F237-4BB3-B905-63EC91C17C2C}
 	EndGlobalSection
 EndGlobal

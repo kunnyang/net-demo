@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "oveCSGeRkSW+6jyO20cNNVJ2W29xo+pGQazi/9Ul+GWlm89FO4QRKGrRS1lMDZEMU11mwFMwU3oIpuMvnvShtg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\A3_ef整洁架构\\A3_ef整洁架构_仓储模式.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\K\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\swashbuckle.aspnetcore\\6.2.3\\swashbuckle.aspnetcore.6.2.3.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.2.3\\swashbuckle.aspnetcore.swagger.6.2.3.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.2.3\\swashbuckle.aspnetcore.swaggergen.6.2.3.nupkg.sha512",
+    "C:\\Users\\K\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.2.3\\swashbuckle.aspnetcore.swaggerui.6.2.3.nupkg.sha512"
+  ],
+  "logs": []
+}
