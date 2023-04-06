@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A1_使用json配置db参数
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A2_ef批量操作", "A2_ef批量操作\A2_ef批量操作.csproj", "{0D26823D-05FB-4DDB-A222-5AE90F53F211}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A6_Linq扩展", "A6_Linq扩展\A6_Linq扩展.csproj", "{AB875804-D3D8-41D5-8A1F-A56EBA783CE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{0D26823D-05FB-4DDB-A222-5AE90F53F211}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D26823D-05FB-4DDB-A222-5AE90F53F211}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D26823D-05FB-4DDB-A222-5AE90F53F211}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB875804-D3D8-41D5-8A1F-A56EBA783CE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB875804-D3D8-41D5-8A1F-A56EBA783CE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB875804-D3D8-41D5-8A1F-A56EBA783CE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB875804-D3D8-41D5-8A1F-A56EBA783CE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
