@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1bi+UYh+EGU87U9S672UQd2xC9o+Hw4F3/nX3TlUDLnY1KE78uuqoRfrW9oBdjKxJJEeA8eqAWgkt8DfSqerkA==",
+  "dgSpecHash": "/i+zbNKGcX672K7kGhQXOVv1zQFXX7GMycClw10cKhmIbmV/ymaTU3Yod4PrXP892EyWID5qPIrgHawhU3Q1YA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\使用json配置db参数\\A1_使用json配置db参数.csproj",
+  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\A1_使用json配置db参数\\A1_使用json配置db参数.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\K\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\K\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -5,6 +5,10 @@ https://www.youtube.com/@MilanJovanovicTech/playlists
 
 ### 优化EF的批量操作
 
+- EF执行原生sql
+- Dapper
+- EF7 批量操作
+
 ### EF 仓储模式
 
 ### 拆分查询

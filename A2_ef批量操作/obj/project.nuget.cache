@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Jl9pmm8iNLQ0dXRWXsFXiIenQLUJnYLX3zJuPVwi8773oeOEqqTFceDM/c10PFE+hGuyN+x1oRNAja3k3oBdqA==",
+  "dgSpecHash": "lfLFxtbwfwH/ZXllMg1dj95Tj8MvGvMx9anQpLMmQlPpI1Da4UpIQGTCo1rNG3zSwTiIVeRp6KOMKuj52aIAJQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\WebApplication1\\A2_ef批量操作.csproj",
+  "projectFilePath": "C:\\Users\\K\\RiderProjects\\EFApp\\A2_ef批量操作\\A2_ef批量操作.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\K\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\K\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

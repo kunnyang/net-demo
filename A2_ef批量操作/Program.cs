@@ -1,6 +1,4 @@
-using Dapper;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Storage;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<DatabaseContext>(o =>
@@ -78,7 +76,21 @@ app.MapPut("update-salary", async (int companyId, DatabaseContext dbContext) =>
 
     #region 4.使用ef core 新增的批量操作
 
-    
+    var company = await dbContext
+        .Companies
+        .Include(c => c.Employees)
+        .FirstOrDefaultAsync(x => x.Id == companyId)!;
+    if (company is null) return Results.NotFound("company is null");
+
+    // https://learn.microsoft.com/zh-cn/ef/core/what-is-new/ef-core-7.0/whatsnew
+    var transaction = await dbContext.Database.BeginTransactionAsync();
+    await dbContext.Employees.Where(c => c.Id == company.Id)
+        .ExecuteUpdateAsync(
+            s => s.SetProperty(e => e.Salary, e => e.Salary * 1.1m));
+
+    company.LastSalaryUpdateUtc = DateTime.UtcNow;
+    await dbContext.SaveChangesAsync();
+    await dbContext.Database.CommitTransactionAsync();
 
     #endregion
 

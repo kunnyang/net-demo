@@ -3634,11 +3634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\K\\RiderProjects\\EFApp\\使用json配置db参数\\A1_使用json配置db参数.csproj",
+      "projectUniqueName": "C:\\Users\\K\\RiderProjects\\EFApp\\A1_使用json配置db参数\\A1_使用json配置db参数.csproj",
       "projectName": "A1_使用json配置db参数",
-      "projectPath": "C:\\Users\\K\\RiderProjects\\EFApp\\使用json配置db参数\\A1_使用json配置db参数.csproj",
+      "projectPath": "C:\\Users\\K\\RiderProjects\\EFApp\\A1_使用json配置db参数\\A1_使用json配置db参数.csproj",
       "packagesPath": "C:\\Users\\K\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\K\\RiderProjects\\EFApp\\使用json配置db参数\\obj\\",
+      "outputPath": "C:\\Users\\K\\RiderProjects\\EFApp\\A1_使用json配置db参数\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\K\\AppData\\Roaming\\NuGet\\NuGet.Config",
